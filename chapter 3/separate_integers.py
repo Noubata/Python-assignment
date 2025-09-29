@@ -1,5 +1,11 @@
-number = int(input('Enter a number of 5 digits: '))
+number = int(input("Enter a number of 5 digits:  "))
 
-for number in range (1):
-	if number // 10000 >=0:
-		print(number)
+
+divisor  = ""
+
+while number > 0:
+	 my_remainder = number % 10
+	 divisor = str(my_remainder) + " " + divisor
+	 number = number // 10
+
+print(divisor)
